@@ -6,6 +6,9 @@ from .models import *
 # Create your views here.
 # creating the class based views
 # creating the class based view PostListView to inherit the ListView Generic class behavior
+# NOTE: Template_name or context_object_name were not indicated in all class based views, in essense, the views uses
+# default template name and context_object_name to render the information nicely.
+
 class PostListView(ListView):
     model = Post
     
